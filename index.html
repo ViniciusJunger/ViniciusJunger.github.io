@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | ClickBoom</title>
   </head>
-  <body style="text-align: center; background-color:#2B2B2B">
-    <canvas id="unity-canvas" width=1250 height=665 style="width: 1250px; height: 665px; background: #2B2B2B"></canvas>
-    <script src="Build/GitBuild2.loader.js"></script>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1250 height=665 style="width: 1250px; height: 665px; background: #231F20"></canvas>
+    <script src="Build/GitHub.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -18,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/GitBuild2.data",
-        frameworkUrl: "Build/GitBuild2.framework.js",
-        codeUrl: "Build/GitBuild2.wasm",
+        dataUrl: "Build/GitHub.data",
+        frameworkUrl: "Build/GitHub.framework.js",
+        codeUrl: "Build/GitHub.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ClickBoom",
